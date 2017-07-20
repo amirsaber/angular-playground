@@ -1,5 +1,5 @@
 # Angular4 Playground
-This is my playground for examples with best practices
+This is my playground for examples with best practices. It's made of a router outlet for different practices. It also incorprate angular material and angular flex layout
 
 ## Form
 Here I demonstrate different form types
