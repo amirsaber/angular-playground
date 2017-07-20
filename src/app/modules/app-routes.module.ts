@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from '../components/home/home.component';
-import { FormComponent } from '../components/form/form.component';
 
 const appRoutes: Routes = [{
   path: '',
@@ -13,7 +12,7 @@ const appRoutes: Routes = [{
   component: HomeComponent
 }, {
   path: 'form',
-  component: FormComponent
+  loadChildren: '../../form/form.module#FormModule'
 }];
 
 @NgModule({

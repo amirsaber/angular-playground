@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { MdDialogRef } from '@angular/material';
 import { FormArray, FormBuilder, FormGroup, Validators, FormControl, NgForm, FormGroupDirective } from '@angular/forms';
 
-import { FormService } from '../../../services/form/form.service';
+import { FormService } from '../../services/form/form.service';
 
-import { IForm } from '../../../models/form/form.interface';
+import { IForm } from '../../models/form/form.interface';
 
 @Component({
   templateUrl: './form1-dialog.component.html',

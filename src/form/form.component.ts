@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MdDialog } from '@angular/material';
 
-import { Form1DialogComponent } from './form1-dialog/form1-dialog.component';
+import { Form1DialogComponent } from './components/form1-dialog/form1-dialog.component';
 
 @Component({
   templateUrl: './form.component.html',
