@@ -8,6 +8,9 @@ Libraries:
 
 Techniques:
  - Lazy Loading
+ - Angular Testing
+ - Unit Testing
+ - E2E Testing
 
 ## Form
 Here I demonstrate different form types
