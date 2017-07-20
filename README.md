@@ -1,5 +1,9 @@
 # Angular4 Playground
-This is my playground for examples with best practices. It's made of a router outlet for different practices. It also incorprate angular material and angular flex layout
+This is my playground for examples with best practices. It's made of a router outlet for different practices.
+Used Libraries:
+ - Angular CLI
+ - Angular Material
+ - Angular Flex Layout
 
 ## Form
 Here I demonstrate different form types
