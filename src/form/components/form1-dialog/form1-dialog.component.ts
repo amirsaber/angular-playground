@@ -13,12 +13,12 @@ import { IForm } from '../../models/form/form.interface';
 export class Form1DialogComponent implements OnInit {
   public fooArray: FormArray;
   public fooFormGroup: FormGroup;
+  public busy: boolean;
+  public loadingData: boolean;
   private currentData: IForm[];
   private markedForDelete: IForm[];
   private markedForUpdate: IForm[];
   private markedForCreate: IForm[];
-  private busy: boolean;
-  private loadingData: boolean;
   private errors = {
     firstName: {
       required: 'First Name is required',
