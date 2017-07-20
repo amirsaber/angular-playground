@@ -1,0 +1,32 @@
+<div>
+  <form *ngIf="!busy && !loadingData" [formGroup]="fooFormGroup">
+    <div formArrayName="FooFormArray">
+      <div *ngFor="let fooForm of fooArray.controls; let i=index" [formGroupName]="i">
+        <input type="hidden" formControlName="id" />
+        <md-input-container>
+          <input mdInput formControlName="firstName" placeholder="First Name" [errorStateMatcher]="formErrorStateMatcher" />
+          <md-error>{{getError('firstName', fooForm)}}</md-error>
+        </md-input-container>
+        <md-input-container>
+          <input mdInput formControlName="lastName" placeholder="Last Name" [errorStateMatcher]="formErrorStateMatcher" />
+          <md-error>{{getError('lastName', fooForm)}}</md-error>
+        </md-input-container>
+        <md-input-container>
+          <input mdInput formControlName="email" placeholder="Email Address" [errorStateMatcher]="formErrorStateMatcher" />
+          <md-error>{{getError('email', fooForm)}}</md-error>
+        </md-input-container>
+        <button md-icon-button (click)="remove(i)"><md-icon>close</md-icon></button>
+      </div>
+    </div>
+    <button md-raised-button (click)="add()">
+      <md-icon>add</md-icon>
+    </button>
+    <button md-raised-button color="accent" (click)="close()">
+      <md-icon>close</md-icon>
+    </button>
+    <button md-raised-button color="primary" (click)="submit()" [disabled]="isFormComplete()">
+      <md-icon>done</md-icon>
+    </button>
+  </form>
+  <md-spinner *ngIf="busy || loadingData"></md-spinner>
+</div>

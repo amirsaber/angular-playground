@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public navLinks = [{
-    label: 'home',
+    label: 'Home',
     link: 'home'
   }, {
-    label: 'form',
+    label: 'Form',
     link: 'form'
   }]
 }
