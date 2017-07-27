@@ -13,6 +13,9 @@ const appRoutes: Routes = [{
 }, {
   path: 'form',
   loadChildren: '../../form/form.module#FormModule'
+}, {
+  path: 'user',
+  loadChildren: '../../user/user.module#UserModule'
 }];
 
 @NgModule({

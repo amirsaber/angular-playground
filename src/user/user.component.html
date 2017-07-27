@@ -1,0 +1,5 @@
+<div>
+  <h1>Users</h1>
+  <button *ngIf="!isLogedIn()" md-raised-button (click)="login()">Log In</button>
+  <button *ngIf="isLogedIn()" md-raised-button (click)="logout()">Log Out</button>
+</div>

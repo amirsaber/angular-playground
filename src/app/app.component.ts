@@ -12,5 +12,8 @@ export class AppComponent {
   }, {
     label: 'Form',
     link: 'form'
+  }, {
+    label: 'User',
+    link: 'user'
   }]
 }
