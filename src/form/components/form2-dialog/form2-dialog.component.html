@@ -1,0 +1,10 @@
+<div class="container">
+  <md-input-container>
+    <input type="text" mdInput placeholder="Address" [formControl]="addressControl" [mdAutocomplete]="auto" />
+  </md-input-container>
+  <md-autocomplete #auto="mdAutocomplete">
+    <md-option *ngFor="let option of options | async" [value]="option">
+      {{ option }}
+    </md-option>
+  </md-autocomplete>
+</div>

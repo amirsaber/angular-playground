@@ -5,7 +5,8 @@ import {
   MdInputModule,
   MdIconModule,
   MdProgressSpinnerModule,
-  MdDialogModule
+  MdDialogModule,
+  MdAutocompleteModule
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -17,7 +18,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MdInputModule,
     MdIconModule,
     MdProgressSpinnerModule,
-    MdDialogModule
+    MdDialogModule,
+    MdAutocompleteModule
   ]
 })
 export class CustomMaterialModule { }
