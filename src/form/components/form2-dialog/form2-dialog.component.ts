@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/debounceTime';
 
 import { AddressService } from '../../services/address/address.service';
 
@@ -18,7 +19,7 @@ export class Form2DialogComponent implements OnInit {
 
   ngOnInit() {
     this.addressControl = new FormControl('');
-    this.addressControl.valueChanges.subscribe((value) => {
+    this.addressControl.valueChanges.debounceTime(200).subscribe((value) => {
       if (value !== null) {
         this.filter(value);
       }
